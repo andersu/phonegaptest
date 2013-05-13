@@ -45,5 +45,9 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        navigator.notification.beep(2);
+        navigator.notification.vibrate(2);
+        alert("Er i metoden");
     }
 };
